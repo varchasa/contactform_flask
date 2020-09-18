@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+    Varchasa Aggarwal</title>
+
+  <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='/css/styles.css') }}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src=  "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">   </script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Sofia|Cedarville Cursive|Marck Script|Fredericka the Great">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+ <style> 
+#name
+{
+  background-color:  chartreuse;
+  font-size: x-large;
+  
+}
+#email
+{
+  background-color:Lightcyan;
+  font-size: x-large;
+}
+#suggestion
+{
+  background-color: Linen;
+  font-size: x-large;
+}
+#contact
+{
+  font-family: "Fredericka the Great";
+  font-size: 42px;
+
+}
+#send
+{
+  font-size: x-large;
+}
+
+
+</style>
+
+</head>
+<body>
+<!-- Default form contact -->
+
+<section id="contact">
+  <div class="jumbotron">
+  <form action="{{url_for('send_message')}}" method="POST" class="text-center border border-light p-5">
+    <div class="view">
+      <!--style="background-image:url('../static/img/contact4.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;"-->
+    
+      <h1  class="display-4" id="contact"><b>Contact ME</b></h1>
+
+      <input name="name" type="text" id="name" class="form-control mb-4" placeholder="Name" class="text-warning">
+      <input name="email" type="email" id="email" class="form-control mb-4" placeholder="E-mail">
+      
+      <div class="form-group">
+          <textarea name="suggestion" class="form-control rounded-0" id="suggestion" rows="3" placeholder="Message"></textarea>
+      </div>
+    
+      
+      <div class="custom-control custom-checkbox mb-4">
+          <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+          
+      </div>
+      
+      <button class="btn btn-warning btn-block" type="submit" id="send">Send</button>
+      
+    </div>
+    </form>
+    </div>
+    </section>
+
+
+    
+</body>
+</html>
