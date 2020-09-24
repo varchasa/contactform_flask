@@ -2,8 +2,6 @@ from flask import Flask, render_template,request,jsonify
 from flask_mail import Mail,Message
 import smtplib
 
-import os
-
 app=Flask(__name__)
 mail = Mail(app)
 
