@@ -4,5 +4,5 @@ itsdangerous==1.1.0
 Jinja2==2.10.1
 MarkupSafe==1.1.1
 Werkzeug==0.15.5
-smtplib>=21.17
+smtplib == 3.6
 flask_mail >=0.9.1
